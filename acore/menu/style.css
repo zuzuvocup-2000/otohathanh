@@ -1,0 +1,125 @@
+.hd-nav .hd-list {
+    position: relative;
+}
+
+.hd-nav .hd-list>li:not(:last-child) {
+    border-right: 1px solid #e093c1;
+}
+
+.hd-nav .hd-list>li {
+    float: left;
+}
+
+.hd-nav .hd-list li {
+    position: relative;
+}
+
+.hd-nav .hd-list li>a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 100%;
+    background-color: #884583;
+    padding: 0 10px 0 10px !important;
+    display: none;
+    animation: fadeIn 1s ease-in;
+}
+
+.dropdown-menu .sub-menu>li:not(:last-child) {
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-menu .sub-menu li>a {
+    padding-left: 10px;
+    display: block;
+}
+
+.hd-nav .hd-list li:hover .dropdown-menu {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scaleY(0%);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(100%);
+    }
+}
+
+.sub-menu-2 {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: calc(100% + 10px);
+    padding: 0 10px 0 10px;
+    background-color: #884583;
+    display: none;
+    animation: fadeIn 1s ease-in;
+}
+
+.sub-menu-2::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    left: -10px;
+}
+
+.sub-menu-2 li:not(:last-child) {
+    border-bottom: 1px solid #fff;
+}
+
+.hd-nav .hd-list .dropdown-menu li:hover>.sub-menu-2 {
+    display: block;
+}
+
+.hd-nav .hd-list {
+    position: relative;
+}
+
+.hd-nav .hd-list .mega {
+    position: static;
+}
+
+.hd-nav .hd-list .mega-menu {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #884583;
+    display: none;
+    animation: fadeIn 1s ease-in;
+}
+
+.hd-nav .hd-list>li:hover .mega-menu {
+    display: block;
+}
+
+.hd-upper {
+    background-color: #884583;
+    height: 40px;
+}
+
+.input-text {
+    width: 280px;
+    height: 28px;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #6f2170;
+    color: #fff;
+}
